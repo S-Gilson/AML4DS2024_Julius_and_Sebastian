@@ -10,7 +10,7 @@ The biokg dataset consists of ~94K nodes and ~5,1M edges for five different enti
 Our goal(s) were to 1) train a 'simple' Knowledge Graph Embedding (KGE) model on the biokg dataset as a baseline model, and 2) train and compare to a more advanced GNN, e.g. a GAT, to see evaluate the differences. We did not, unfortunately, manage to complete the second goal. The code includes our four attempts to train a model, visualizations of drug-drug triplets and a simple example from the dataset.
 
 `MODEL RUNs AND RESULTS` 
-Due to its scale, we had to decrease the train, test and validation set to be able to train the ComplEx model during the first attempts. We have, therefore, created a smaller subset of the training data. This comes at the obvious cost of losing the underlying structure and logic of the KG, and our model can not be used to make link predictions.
+Due to its scale, we had to decrease the train, test and validation set to be able to train the ComplEx model during the first attempts. We have, therefore, created a smaller subset of triplets from the training data. This comes at the obvious cost of losing the underlying structure and logic of the KG, and our model can not be used to make link predictions.
 
 We have utilsed the pytorch.geomtric library and imported an out-of-the-box version of the ComplEx model. For all model runs we utilised the Adam optimizer. 
 
